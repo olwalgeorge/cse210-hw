@@ -4,9 +4,9 @@ using System;
 /// <name>George Olwal</name>
 /// </author>
 /// <summary>
-/// Prep 2  Core 2
-/// This program will allow the user to input their grade percentage and output
-/// their letter grade and whether pass or fail
+/// Prep 2  Core 3
+/// This program will allow the user to input their grade percentage and store in 'letter' variable
+/// Use $ to output pass or fail message and grade
 /// </summary>
 
 class Program
@@ -19,35 +19,36 @@ class Program
         int studentMarks = int.Parse(Console.ReadLine()); 
 
         // Get the student grade and print accordingly       
+        string letter;
         if(studentMarks >= 90)
             {
-                Console.WriteLine("A");
+                letter = "A";
             }
         else if(studentMarks >= 80)
             {
-                Console.WriteLine("B");
+                letter = "B";
             }
         else if(studentMarks >= 70)
             {
-                Console.WriteLine("C");
+                letter = "C";
             }
         else if(studentMarks >= 60)
             {
-                Console.WriteLine("D");
+                letter = "D";
             }
         else
             {
-                Console.WriteLine("F");
+                letter = "F";
             }
 
         // Determine if the student passed or failed
         if(studentMarks >= 70)
             { 
-                Console.WriteLine("Congratulations! You passed");
+                Console.WriteLine($"Congratulations! You passed with a grade of '{letter}'");
             }
         else
             {
-                Console.WriteLine("Sorry, you failed. Put more efforts in your next trial");
+                Console.WriteLine($"Sorry, you failed with a grade of '{letter}'. Put more efforts in your next trial");
             }
     }
 
