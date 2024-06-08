@@ -43,11 +43,11 @@ class Program
         // Determine if the student passed or failed
         if(studentMarks >= 70)
             { 
-                Console.WriteLine($"Congratulations! You passed");
+                Console.WriteLine("Congratulations! You passed");
             }
         else
             {
-                Console.WriteLine($"Sorry, you failed. Put more efforts in your next trial");
+                Console.WriteLine("Sorry, you failed. Put more efforts in your next trial");
             }
     }
 
