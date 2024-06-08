@@ -4,9 +4,9 @@ using System;
 /// <name>George Olwal</name>
 /// </author>
 /// <summary>
-/// Prep 2  Core 3
+/// Prep 2  Stretch
 /// This program will allow the user to input their grade percentage and store in 'letter' variable
-/// Use $ to output pass or fail message and grade
+/// Use $ to output pass or fail message and grade and sign
 /// </summary>
 
 class Program
@@ -41,14 +41,25 @@ class Program
                 letter = "F";
             }
 
+        string suffix="";
+        if(studentMarks % 10 >= 7 && letter != "A")
+        
+            {
+                suffix = "+";
+            }
+        else if(studentMarks % 10 < 3 && letter != "F")
+            {
+                suffix = "-";
+            }   
+
         // Determine if the student passed or failed
         if(studentMarks >= 70)
             { 
-                Console.WriteLine($"Congratulations! You passed with a grade of '{letter}'");
+                Console.WriteLine($"Congratulations! You passed with a grade of '{letter}{suffix}'");
             }
         else
             {
-                Console.WriteLine($"Sorry, you failed with a grade of '{letter}'. Put more efforts in your next trial");
+                Console.WriteLine($"Sorry, you failed with a grade of '{letter}{suffix}'. Put more efforts in your next trial");
             }
     }
 
