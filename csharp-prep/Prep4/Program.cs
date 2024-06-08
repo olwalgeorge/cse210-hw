@@ -3,10 +3,10 @@ using System;
 /// George Olwal
 /// </Author>
 /// <Summary>
-/// C# Prep 4 Core 1
+/// C# Prep 4 Core 2
 /// This program will ask the user to enter a list of numbers from while inserting on the list until 0 is entered
 /// the program then displays the list on the console,
-/// calculates and display sum
+/// calculates and display sum and average
 /// </Summary>
 
 class Program
@@ -39,5 +39,9 @@ class Program
             sum += number;
         }
         Console.WriteLine($"The sum is: {sum}");
+
+        //Calculate average
+        double average = (double)sum / numbers.Count;
+        Console.WriteLine($"The average is: {average}");
     }
 }
