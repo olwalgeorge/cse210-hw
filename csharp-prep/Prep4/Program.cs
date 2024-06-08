@@ -3,10 +3,10 @@ using System;
 /// George Olwal
 /// </Author>
 /// <Summary>
-/// C# Prep 4 Core 3
+/// C# Prep 4 stretch Challenge
 /// This program will ask the user to enter a list of numbers from while inserting on the list until 0 is entered
 /// the program then displays the list on the console,
-/// calculates and display sum, average and largest number
+/// calculates and display sum, average, largest number and smallest positive number
 /// </Summary>
 
 class Program
@@ -32,9 +32,10 @@ class Program
             Console.WriteLine(number);
         }
 
-        // Calculate sum & largest number
+        // Calculate sum, largest number and smallest positive number
         int sum = 0;
-        double largest = double.NegativeInfinity;   
+        double largest = double.NegativeInfinity;
+        double smallestPositive = double.PositiveInfinity;   
         foreach (int number in numbers)
         {
             sum += number;
@@ -42,6 +43,11 @@ class Program
             if (number > largest)
             {
                 largest = number;
+            }
+
+            if (number > 0 && number < smallestPositive)
+            {
+                smallestPositive = number;
             }
 
         }
@@ -53,5 +59,8 @@ class Program
 
         //Display largest number
         Console.WriteLine($"The largest number is: {largest}");
+
+        //Display smallest positive number
+        Console.WriteLine($"The smallest positive number is: {smallestPositive}");
     }
 }
