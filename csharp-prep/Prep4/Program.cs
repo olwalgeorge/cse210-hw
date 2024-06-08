@@ -7,6 +7,7 @@ using System;
 /// This program will ask the user to enter a list of numbers from while inserting on the list until 0 is entered
 /// the program then displays the list on the console,
 /// calculates and display sum, average, largest number and smallest positive number
+/// Sort and display the sorted number list
 /// </Summary>
 
 class Program
@@ -62,5 +63,13 @@ class Program
 
         //Display smallest positive number
         Console.WriteLine($"The smallest positive number is: {smallestPositive}");
+
+        //Sort and display sorted list
+        numbers.Sort();
+        Console.WriteLine("The sorted list is: ");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
     }
 }
