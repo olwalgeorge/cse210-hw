@@ -4,9 +4,9 @@ using System;
 /// <name>George Olwal</name>
 /// </author>
 /// <summary>
-/// Prep 2  Core 1
+/// Prep 2  Core 2
 /// This program will allow the user to input their grade percentage and output
-/// their letter grade. 
+/// their letter grade and whether pass or fail
 /// </summary>
 
 class Program
@@ -38,6 +38,16 @@ class Program
         else
             {
                 Console.WriteLine("F");
+            }
+
+        // Determine if the student passed or failed
+        if(studentMarks >= 70)
+            { 
+                Console.WriteLine($"Congratulations! You passed");
+            }
+        else
+            {
+                Console.WriteLine($"Sorry, you failed. Put more efforts in your next trial");
             }
     }
 
