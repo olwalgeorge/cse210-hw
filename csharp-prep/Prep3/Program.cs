@@ -4,38 +4,51 @@ using System;
 /// <name>George Olwal</name>
 /// </author>
 /// <summary>
-/// Prep 3 Core 3
-/// Generate random number between 1 to 100 and ask user to guess it
-/// program will continously tell if the guess is higher or lower than the magic number untill the guess is right
+/// Prep 3 stretch challenge
+/// This is a number guessing game where user is asked to guess a number and the 
+/// program will tell them if their guess is higher or lower than the magic number.
+/// The program calculates number of attempts and displays it when the guess is right.
+/// User is then asked to continue the game, where by programs starts through loop ccall of Main(args)
+/// Otherwise game ends
 /// </summary>
 class Program
 {
     static void Main(string[] args)
-    {   
-        // Generate random number between 1 and 100 as the magic number
+    {
         Random random = new Random();
         int magicNumber = random.Next(1, 101);
-
-        // Initialize guess
+        
         int guess = 0;
-
-        // Continously ask user for a guess and compare with the magic number untill guess is right
-        while(guess != magicNumber)        
-        {
-            
-            Console.Write("What is your guess? ");
-            guess = int.Parse(Console.ReadLine());
-            
-            if(guess > magicNumber)
+        int attempts = 0;
+        while(guess != magicNumber)
             {
-                Console.WriteLine("Lower");
-            }  
-            else if(guess < magicNumber)
-            {
-                Console.WriteLine("Higher");
-            }  
-        }
+                attempts++;
+                {
+                    Console.Write("What is your guess? ");
+                    guess = int.Parse(Console.ReadLine());                    
+                }
+                if(guess > magicNumber)
+                    {
+                        Console.WriteLine("Lower");
+                    }  
+                else if(guess < magicNumber)
+                    {
+                        Console.WriteLine("Higher");
+                    }  
+                
+            }
+        Console.WriteLine($"You guessed it! It took you {attempts} guesses");
+        Console.Write("Do you want to continue with the game(y=Yes)? ");
+        string answer = Console.ReadLine().ToLower();
+        if(answer == "y")
+            {   
+                Main(args);
 
-        Console.WriteLine("You guessed it!");
+            }  
+        else
+            {
+                Console.WriteLine("Goodbye");
+            }
     }
+
 }
