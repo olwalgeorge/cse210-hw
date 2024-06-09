@@ -5,8 +5,8 @@ using System;
 /// </author>
 /// <summary>
 /// Abstraction Learning Activity
-/// Test your Job class
-/// Create 2 job instances and display companies using dot notation
+/// Add a Display method to the Job class
+/// Create 2 job instances and display jobs details using method calls
 /// </summary>
 
 class Program
@@ -22,13 +22,13 @@ class Program
 
         //Create job2 instance
         Job job2 = new Job();
-        job2._company = "Etec Communications Ltd";
+        job2._company = "Etec Communications";
         job2._jobTitle = "Software Engineer";
         job2._startYear = 2022;
         job2._endYear = 2024;
 
-        //Test if companies displays using dot notation
-        Console.WriteLine(job1._company);
-        Console.WriteLine(job2._company);
+        //Display jobs details using method calls
+        job1.DisplayJobDetails();
+        job2.DisplayJobDetails();
     }
 }
