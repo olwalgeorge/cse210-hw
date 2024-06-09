@@ -18,9 +18,10 @@ public class Resume
     public void DisplayResumeDetails()
     {
         //Display name
-        Console.WriteLine(_name);
+        Console.WriteLine($"Name: {_name}");
 
         //Display jobs details by iterative call to job Display method
+        Console.WriteLine("Jobs: ");
         foreach (var item in _jobList)
         {
             item.DisplayJobDetails();
