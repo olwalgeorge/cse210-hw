@@ -5,8 +5,10 @@ using System;
 /// </author>
 /// <summary>
 /// Abstraction Learning Activity
+/// Create a Job class
 /// Add a Display method to the Job class
 /// Create 2 job instances and display jobs details using method calls
+/// Create resume class
 /// </summary>
 
 class Program
