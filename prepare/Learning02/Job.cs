@@ -5,7 +5,7 @@ using System;
 /// </author>
 /// <summary>
 /// Abstraction Learning Activity
-/// Create the Job class
+/// Test your Job class
 /// </summary>
 
 
