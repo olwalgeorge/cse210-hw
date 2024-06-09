@@ -9,6 +9,7 @@ using System;
 /// Add a Display method to the Job class
 /// Create 2 job instances and display jobs details using method calls
 /// Create resume class
+/// Test Resume class
 /// </summary>
 
 class Program
@@ -32,5 +33,17 @@ class Program
         //Display jobs details using method calls
         job1.DisplayJobDetails();
         job2.DisplayJobDetails();
+
+        //Create resume instance
+        Resume myResume = new Resume();
+        myResume._name = "George Olwal";
+        myResume._jobList.Add(job1);
+        myResume._jobList.Add(job2);
+        
+        //Display resume job1 title using dot notation
+        Console.WriteLine(myResume._name);
+        Console.WriteLine(myResume._jobList[0]._jobTitle);     
+        
+
     }
 }
