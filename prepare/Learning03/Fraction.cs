@@ -6,6 +6,7 @@ using System;
 /// W03 Prepare: Learning Activity
 /// Create a Fraction class
 /// Create the Constructors
+/// Create Gettors
 /// </summary>
 
 
@@ -21,7 +22,7 @@ public class Fraction
     {
         _top = 1;
         _bottom = 1;  
-        Console.WriteLine("Constructor called with default values"); // For verification at this stage      
+        
     }
 
     //Constructor - sets whole nuumber (numerator/1)
@@ -29,7 +30,7 @@ public class Fraction
     {
         _top = wholeNumber;
         _bottom = 1;
-        Console.WriteLine($"Constructor called with whole number, {_top}"); //For verication only
+       
     }
 
     //Constructor - sets fraction (numerator/denominator)
@@ -37,8 +38,33 @@ public class Fraction
     {
         _top = top;
         _bottom = bottom;
-        Console.WriteLine($"Constructor called with numerator, {_top} and denominator, {_bottom}");// for verification
+        
     }
+
+    //Getter (numerator)
+    public int GetTop()
+    {
+        return _top; 
+    }
+
+    //Getter (denominator)
+    public int GetBottom()
+    {
+        return _bottom;
+    }
+
+    //Setter (numerator)
+    public void SetTop(int top)
+    {
+        _top = top;
+    }
+
+    //Setter (denominator)
+    public void SetBottom(int bottom)
+    {
+        _bottom = bottom;
+    }
+
 
 }
 
