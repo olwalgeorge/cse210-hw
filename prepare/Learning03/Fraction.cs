@@ -6,7 +6,8 @@ using System;
 /// W03 Prepare: Learning Activity
 /// Create a Fraction class
 /// Create the Constructors
-/// Create Gettors
+/// Create the Getters and Setters
+/// Create methods to return the representations
 /// </summary>
 
 
@@ -65,6 +66,16 @@ public class Fraction
         _bottom = bottom;
     }
 
+    //Methods
+    public string GetFractionString()  
+    {
+        return $"{_top}/{_bottom}";
+    }
+
+    public double GetDecimalValue() 
+    {
+        return (double)_top / _bottom;
+    }
 
 }
 
