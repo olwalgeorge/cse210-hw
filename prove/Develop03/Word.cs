@@ -12,7 +12,7 @@ using System;
 
 class Word
 {
-    public string Text { get; private set; }
+    public string Text { get; }
     public bool Hidden { get; private set; }
 
     public Word(string text)
@@ -24,6 +24,11 @@ class Word
     public void Hide()
     {
         Hidden = true;
+    }
+
+    public void Show()
+    {
+        Hidden = false;
     }
 
     public override string ToString()

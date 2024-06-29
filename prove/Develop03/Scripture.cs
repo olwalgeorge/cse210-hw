@@ -19,13 +19,13 @@ using System;
 
 class Scripture
 {
-    private ScriptureReference Reference { get; set; }
-    private List<Word> Words { get; set; }
+    public ScriptureReference Reference { get; }
+    private List<Word> Words { get; }
 
     public Scripture(ScriptureReference reference, string text)
     {
         Reference = reference;
-        Words = text.Split(' ').Select(word => new Word(word)).ToList();
+        Words = text.Split().Select(word => new Word(word)).ToList();
     }
 
     public void Display()
@@ -37,10 +37,20 @@ class Scripture
     public void HideRandomWords(int count)
     {
         var random = new Random();
-        var wordsToHide = Words.Where(word => !word.Hidden).OrderBy(x => random.Next()).Take(count).ToList();
+        var wordsToHide = Words.Where(word => !word.Hidden).OrderBy(_ => random.Next()).Take(count);
         foreach (var word in wordsToHide)
         {
             word.Hide();
+        }
+    }
+
+    public void ShowHint()
+    {
+        var random = new Random();
+        var hiddenWords = Words.Where(word => word.Hidden).OrderBy(_ => random.Next()).FirstOrDefault();
+        if (hiddenWords != null)
+        {
+            hiddenWords.Show();
         }
     }
 
