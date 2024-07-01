@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Assignment assignment1 = new Assignment("George Olwal", "Trigonometry");
+
+        Console.WriteLine(assignment1.GetSummary());
     }
 }
