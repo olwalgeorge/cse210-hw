@@ -1,7 +1,14 @@
 using System;
 
+/// <author>
+/// George Olwal
+/// </author>
+/// <summary>
+/// MathAssignment subclass
+/// </summary>
 
-class MathAssignment : Assignment
+
+public class MathAssignment : Assignment
 {
     private string _textBookSection;
     private string _problems;

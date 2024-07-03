@@ -1,9 +1,16 @@
 using System;
 
+/// <author>
+/// George Olwal
+/// </author>
+/// <summary>
+/// Assignment Base class
+/// </summary>
 
-class Assignment
+
+public class Assignment
 {
-    private string _studentName;
+    protected string _studentName;
     private string _topic;
 
     public Assignment(string name, string topic)
