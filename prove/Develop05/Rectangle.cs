@@ -10,10 +10,12 @@ using System.Drawing;
 /// 
 
 public class Rectangle : Shape
-{
+{    
+    // fields
     private double _length;
     private double _width;
 
+    // constructor (colour is inherited from the base)
     public Rectangle(string colour, double length, double width) : base(colour)
     {
         
@@ -22,6 +24,7 @@ public class Rectangle : Shape
 
     }
 
+    // methods (overrides the GetArea() method of the base)
     public override double GetArea()
     {
         return _length * _width;

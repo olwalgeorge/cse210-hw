@@ -5,20 +5,37 @@ using System;
 /// </author>
 /// <summary>
 /// W05 - Polymorphism Learning Activity
+/// Created shape class
+/// created Square, Rectangle and Circle class
+/// created list of shapes and used for each loop to iterate through shaapes while displaying
 /// </summary>
 /// 
 
 class Program
 {
     static void Main(string[] args)
+
     {
-        Square square1 = new Square("red", 3.0);
+        //create list of shapes
+        List<Shape> shapes = new List<Shape>();
 
-        Console.WriteLine($"The area of the {square1.Colour} square is {square1.GetArea()}");
+        //create new shapes
+        Square square1 = new Square("Red", 3.0);
+        shapes.Add(square1);
 
-        Rectangle rectangle1 = new Rectangle("blue", 3.5, 6.3);
+        Rectangle rectangle1 = new Rectangle("Blue", 3, 5);
+        shapes.Add(rectangle1);
 
-        Console.WriteLine($"The area of the {rectangle1.Colour} rectangle is {rectangle1.GetArea()}");
+        Circle circle1 = new Circle ("Green", 4);
+        shapes.Add(circle1);
 
+
+        //display shapes
+        foreach (Shape shape in shapes)
+        {
+            Console.WriteLine($" {shape.Colour} {shape.GetType().Name.ToLower()} of area {shape.GetArea().ToString("0.00")}"); 
+        }
+
+       
     }
 }

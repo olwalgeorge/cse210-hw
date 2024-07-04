@@ -12,19 +12,23 @@ using System;
 
 public class Shape
 {
+    //fields
     private string _colour;
 
+    //Getter and setter
     public string Colour
     {
         get { return _colour; }
         set { _colour = value; }
     }
 
+    //Constructor
     public Shape(string colour)
     {
         _colour = colour;
     }
 
+    // Methods
     public virtual double GetArea()
     {
         return 0;
