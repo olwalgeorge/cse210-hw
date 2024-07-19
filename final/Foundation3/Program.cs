@@ -19,8 +19,8 @@ class Program
         Address address2 = new Address("1000 Rockefeller Plaza", "New York", "NY", "10111");
         Address address3 = new Address("100 1st Avenue SW", "Washington", "DC", "20220");
 
-        Lecture lecture = new Lecture("Tech Talk", "A talk on the latest in tech.", "2024-08-01", "10:00 AM", address1, "John Doe", 100);
-        Reception reception = new Reception("Networking Event", "An event to network with professionals.", "2024-08-02", "6:00 PM", address2, "rsvp@example.com");
+        Lecture lecture = new Lecture("Tech Talk", "A talk on the latest in tech.", "2024-08-01", "10:00 AM", address1, "George Olwal", 100);
+        Reception reception = new Reception("Networking Event", "An event to network with professionals.", "2024-08-02", "6:00 PM", address2, "olwal@etec.co.ke");
         OutdoorGathering outdoorGathering = new OutdoorGathering("Picnic", "A fun outdoor picnic.", "2024-08-03", "12:00 PM", address3, "Sunny");
 
         Console.WriteLine("Lecture Standard Details:\n" + lecture.StandardDetails());
