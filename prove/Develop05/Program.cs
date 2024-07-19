@@ -1,9 +1,17 @@
-using System;
+
+
+
+    /// <summary>
+    /// The main entry point of the program.
+    /// </summary>
+    /// <param name="args">The command-line arguments.</param>
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        GoalManager goalManager = new GoalManager();
+        goalManager.Start();
     }
 }
