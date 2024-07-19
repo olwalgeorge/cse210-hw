@@ -1,3 +1,10 @@
+using System;
+
+/// <summary>
+/// Represents an event, which is a specific occurrence with a defined start and end time,
+/// a title, a description, and an address.
+/// </summary>
+
 class Event
 {
     private string Title { get; set; }

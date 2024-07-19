@@ -1,3 +1,10 @@
+using System;
+
+/// <summary>
+/// Represents an outdoor gathering event.
+/// It extends the Event class and adds a property for the weather forecast.
+/// </summary>
+
 class OutdoorGathering : Event
 {
     private string WeatherForecast { get; set; }

@@ -1,5 +1,16 @@
 using System;
 
+/// <author>
+/// <name>George Olwal</name>
+/// </author>
+/// <summary>
+/// Program for tracking and generating marketing material for events.
+/// </summary>
+/// <remarks>
+/// This program uses inheritance to avoid duplicating shared attributes and methods,
+/// follows the principles of encapsulation, and uses an address class for the addresses.
+/// </remarks>
+
 class Program
 {
     static void Main(string[] args)

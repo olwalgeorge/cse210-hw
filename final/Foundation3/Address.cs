@@ -1,3 +1,9 @@
+using System;
+
+/// <summary>
+/// Represents a physical address with fields for street, city, state, and zip code.
+/// </summary>
+
 class Address
 {
     private string Street { get; set; }

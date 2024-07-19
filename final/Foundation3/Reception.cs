@@ -1,3 +1,9 @@
+using System;
+
+/// <summary>
+/// Represents a wedding reception event
+/// </summary>
+
 class Reception : Event
 {
     private string RSVPEmail { get; set; }

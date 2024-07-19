@@ -1,3 +1,12 @@
+using System;
+
+/// <summary>
+/// Represents a lecture event.
+/// </summary>
+/// <remarks>
+/// This class extends the Event class and adds properties for the speaker and capacity of the lecture.
+/// </remarks>
+
 class Lecture : Event
 {
     private string Speaker { get; set; }
