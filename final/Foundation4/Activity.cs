@@ -1,4 +1,14 @@
-// Base Activity class
+using System;
+
+ /// <summary>
+/// Abstract base class for all activities.
+/// Provides properties for date and minutes exercised.
+/// </summary>
+/// <remarks>
+/// The abstract class defines the blueprint and common features of the activities.
+/// Each activity (Running, Swimming, or Hiking) has unique behaviour.
+/// </remarks>
+
 public abstract class Activity
 {
     private DateTime _date;
@@ -32,3 +42,5 @@ public abstract class Activity
     }
 }
 
+
+   

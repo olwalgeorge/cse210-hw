@@ -1,4 +1,10 @@
-// Swimming class
+using System;
+
+/// <summary>
+/// Represents a swimming activity derived from the Activity class. 
+/// Includes properties and methods to manage and calculate swim details such as laps.
+/// </summary>
+
 public class Swimming : Activity
 {
     private int _laps;

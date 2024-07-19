@@ -1,4 +1,10 @@
-// Running class
+using System;
+
+/// <summary>
+/// Represents an instance of a running activity.
+/// Initializes a new instance of the Running class with the specified date, minutes, and distance.
+/// </summary>
+
 public class Running : Activity
 {
     private double _distance;

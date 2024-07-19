@@ -1,4 +1,11 @@
-// Cycling class
+using System;
+
+
+/// <summary>
+/// Cycling class
+/// Represents an instance of a cycling activity.
+/// </summary>
+
 public class Cycling : Activity
 {
     private double _speed;
