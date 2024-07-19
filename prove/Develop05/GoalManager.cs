@@ -2,31 +2,40 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-    /// <summary>
-    /// Initializes a new instance of the <see cref="GoalManager"/> class.
-    /// </summary>
-    /// <remarks>
-    /// This constructor initializes the <see cref="_goals"/> field with an empty list and sets the <see cref="_score"/> field to 0.
-    /// DisplayPlayerInfo: This method displays the current score to the console.
-    /// ListGoalNames: This method lists the names of all the goals in the _goals list.
-    /// ListGoalDetails: This method lists the details of all the goals in the _goals list.
-    /// CreateGoal: This method allows the user to create a new goal. The user selects the type of goal, enters the short name, description, and points, and the goal is added to the _goals list.
-    /// RecordEvent: This method allows the user to record an event for a goal. The user selects the goal and the method checks if the selection is valid. If it is, the event is recorded and the score is updated.
-    /// SaveGoals: This method saves the current score and the details of all the goals in the _goals list to a file named "goals.txt".
-    /// LoadGoals: This method loads the saved goals and score from the "goals.txt" file. If the file exists, the method reads the score and the details of each goal and adds them to the _goals list.
-    /// Added bonus
-    /// </remarks>
+
+
+/// <author>
+/// George Olwal
+/// </author>  
+/// <summary>
+/// GoalManager class
+/// Initializes a new instance of the <see cref="GoalManager"/> class.
+/// </summary>
+/// <remarks>
+/// This constructor initializes the <see cref="_goals"/> field with an empty list and sets the <see cref="_score"/> field to 0.
+/// DisplayPlayerInfo: This method displays the current score to the console.
+/// ListGoalNames: This method lists the names of all the goals in the _goals list.
+/// ListGoalDetails: This method lists the details of all the goals in the _goals list.
+/// CreateGoal: This method allows the user to create a new goal. The user selects the type of goal, enters the short name, description, and points, and the goal is added to the _goals list.
+/// RecordEvent: This method allows the user to record an event for a goal. The user selects the goal and the method checks if the selection is valid. If it is, the event is recorded and the score is updated.
+/// SaveGoals: This method saves the current score and the details of all the goals in the _goals list to a file named "goals.txt".
+/// LoadGoals: This method loads the saved goals and score from the "goals.txt" file. If the file exists, the method reads the score and the details of each goal and adds them to the _goals list.
+/// Added bonus
+/// </remarks>
  public class GoalManager
     {
+        // Fields
         private List<Goal> _goals;
         private int _score;
 
+        // Constructor
         public GoalManager()
         {
             _goals = new List<Goal>();
             _score = 0;
         }
 
+        // Methods
         public void Start()
         {
             while (true)

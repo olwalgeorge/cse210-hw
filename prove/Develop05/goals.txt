@@ -1,3 +1,0 @@
-20
-SimpleGoal|Olwal|Stay wake|20|True
-EternalGoal|olwal|read bible daily|30

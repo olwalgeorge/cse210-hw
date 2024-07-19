@@ -10,30 +10,33 @@ using System;
 /// </remarks>
 public class SimpleGoal : Goal
     {
+        // Fields
         private bool _isComplete;
 
+        // Constructor
         public SimpleGoal(string shortName, string description, int points, bool isComplete = false)
             : base(shortName, description, points)
         {
             _isComplete = isComplete;
         }
 
-        public override void RecordEvent()
+        // Methods
+        public override void RecordEvent() //Example of method overriding polymophism
         {
             _isComplete = true;
         }
 
-        public override bool IsComplete()
+        public override bool IsComplete() //Example of method overriding polymophism
         {
             return _isComplete;
         }
 
-        public override string GetDetailsString()
+        public override string GetDetailsString() //Example of method overriding polymophism
         {
             return $"[{(_isComplete ? "X" : " ")}] {_shortName} - {_description} ({_points} points)";
         }
 
-        public override string GetStringRepresentation()
+        public override string GetStringRepresentation() //Example of method overriding polymophism
         {
             return $"SimpleGoal|{_shortName}|{_description}|{_points}|{_isComplete}";
         }
