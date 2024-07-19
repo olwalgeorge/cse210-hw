@@ -6,6 +6,7 @@ using System.Collections.Generic;
 /// <name>George Olwal</name>
 /// </author>
 /// <summary>
+/// W06 Prove: Final Project Program #1—Abstraction
 /// This program demonstrates how Abstraction is used to keep track of YouTube videos and comments left on them.
 /// It defines two classes, Video and Comment, and uses them to create a list of videos, each with
 /// its own list of comments. The program then displays the details of each video, including the
